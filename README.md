@@ -1,76 +1,73 @@
 TSLA 5-Year Stock Analysis & Predictive Modeling
 
-A complete Exploratory Data Analysis (EDA) and machine learning project exploring Tesla’s stock performance over the last five years, including trend analysis, volume behavior, technical indicators, and a Random Forest regression model to predict future closing prices.
+A complete Exploratory Data Analysis (EDA) and machine learning project exploring Tesla’s stock performance over the past five years, including trend behavior, trading volume patterns, technical indicators, and a Random Forest regression model for predicting closing prices.
 
-Project Overview
+1. Project Overview
 
-This project analyzes Tesla (TSLA) stock data from the past five years to uncover key trends and patterns using Python-based data science techniques. It also builds and evaluates a machine learning model for stock price prediction using Random Forest Regression.
-
-This repository demonstrates practical skills in:
+This project examines Tesla (TSLA) stock data to uncover key financial patterns and construct a predictive model for future price movements.
+It demonstrates practical data science and machine learning skills, including:
 
 Time-series exploratory data analysis
 
-Data cleaning and feature engineering
+Data cleaning and preprocessing
 
-Financial technical indicator construction
+Feature engineering using technical indicators
 
-Model training and evaluation
+Building and evaluating machine learning models
 
-Visualization and interpretation of insights
+Visual analytics and financial interpretation
 
-Communicating results clearly for technical and non-technical audiences
+Clear communication of insights for both technical and non-technical audiences
 
-Key Features
-1. Exploratory Data Analysis (EDA)
+2. Key Features
+Exploratory Data Analysis (EDA)
 
-Price trend analysis
+Long-term price trend analysis
 
-Volume dynamics
+Trading volume dynamics
 
-Moving averages and momentum behavior
+Moving averages and momentum interpretation
 
-Volatility observations
+Market structure and volatility insights
 
-Market structure interpretation
+Feature Engineering
 
-2. Feature Engineering
-
-Technical indicators such as:
+Includes commonly used financial indicators:
 
 20-day moving average
 
 50-day moving average
 
-Momentum indicators
+Momentum-based features
 
-Volume-based signals
+Volume signals
 
-Lag features
+Lag features for temporal modeling
 
-3. Predictive Modeling
+Predictive Modeling
 
-Random Forest Regressor
+A Random Forest Regressor was trained using engineered features.
+Includes:
 
 Train/test split validation
 
 RMSE and R² evaluation
 
-Hyperparameter tuning for better generalization
+Hyperparameter tuning for increased generalization
 
-4. Visualizations
+Visualizations
 
-The project includes curated visualizations, such as:
+Stored in the images/ folder:
 
-Stock price trend
+Price trend line
 
 Daily trading volume
 
 Moving averages
 
 Actual vs. predicted closing prices
-(Stored in the images/ folder)
 
-Repository Structure
+3. Repository Structure
 tsla-5year-stock-analysis
 │
 ├── notebook/
@@ -86,29 +83,32 @@ tsla-5year-stock-analysis
 └── models/
     └── random_forest_model.pkl
 
-Model Performance
+4. Model Performance
 Metric	Value
 RMSE (tuned model)	21.46
 R² Score	0.94
 
-The model captures long-term price trends effectively but, as expected in financial time series, struggles with sudden price spikes and reversals. Regularization was prioritized over perfect fit to ensure robustness.
+The model effectively captures long-term price direction but, due to the inherent volatility of financial markets, struggles with abrupt spikes or drops.
+Regularization during tuning prioritized stability over aggressive fitting, resulting in a more reliable model.
 
-How to Run the Notebook
+5. How to Run the Notebook
 
-Clone the repository
+* Clone the repository
 
-Install the required dependencies
+* Install the required Python dependencies
 
-Open the notebook in Jupyter or VS Code
+* Open the notebook in Jupyter or VS Code
 
-Run the analysis end-to-end
+* Run all cells to reproduce the analysis
 
-Data Source
+6. Data Source
 
-The raw historical TSLA stock data was downloaded directly from Yahoo Finance.
+Historical TSLA stock data was downloaded directly from Yahoo Finance.
 
-Contact
+7. Contact
 
-If you’d like to connect, collaborate, or discuss data science, you can reach me here:
+Feel free to connect or reach out:
 LinkedIn: [https://www.linkedin.com/in/daya-kumar27/]
-Feel free to connect.
+
+If you'd like this in a more minimal, more aesthetic, or more technical style, I can rewrite it again.
+If you want, I can also design a banner image for the GitHub repo header to make it look even more polished.
