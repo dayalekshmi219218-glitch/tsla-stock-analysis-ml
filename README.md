@@ -1,177 +1,114 @@
-TSLA Stock Analysis and Price Prediction Using Machine Learning
-Overview
+TSLA 5-Year Stock Analysis & Predictive Modeling
 
-This project presents a complete end-to-end analysis of TSLA stock performance over a five-year period, combining data cleaning, exploratory data analysis (EDA), feature engineering, technical indicators, and a machine learning model built using a Random Forest regressor. The objective is to understand market behavior, uncover trends, and develop a model capable of predicting future closing prices.
+A complete Exploratory Data Analysis (EDA) and machine learning project exploring Tesla’s stock performance over the last five years, including trend analysis, volume behavior, technical indicators, and a Random Forest regression model to predict future closing prices.
 
-The project demonstrates practical skills in data science, Python, financial analytics, and machine learning—structured to meet professional standards for portfolio and internship applications.
+Project Overview
+
+This project analyzes Tesla (TSLA) stock data from the past five years to uncover key trends and patterns using Python-based data science techniques. It also builds and evaluates a machine learning model for stock price prediction using Random Forest Regression.
+
+This repository demonstrates practical skills in:
+
+Time-series exploratory data analysis
+
+Data cleaning and feature engineering
+
+Financial technical indicator construction
+
+Model training and evaluation
+
+Visualization and interpretation of insights
+
+Communicating results clearly for technical and non-technical audiences
+
+Key Features
+1. Exploratory Data Analysis (EDA)
+
+Price trend analysis
+
+Volume dynamics
+
+Moving averages and momentum behavior
+
+Volatility observations
+
+Market structure interpretation
+
+2. Feature Engineering
+
+Technical indicators such as:
+
+20-day moving average
+
+50-day moving average
+
+Momentum indicators
+
+Volume-based signals
+
+Lag features
+
+3. Predictive Modeling
+
+Random Forest Regressor
+
+Train/test split validation
+
+RMSE and R² evaluation
+
+Hyperparameter tuning for better generalization
+
+4. Visualizations
+
+The project includes curated visualizations, such as:
+
+Stock price trend
+
+Daily trading volume
+
+Moving averages
+
+Actual vs. predicted closing prices
+(Stored in the images/ folder)
 
 Repository Structure
-
 tsla-5year-stock-analysis
 │
 ├── notebook/
 │   └── tsla_analysis.ipynb
+│
 ├── images/
 │   ├── price_trend.png
 │   ├── volume.png
 │   ├── moving_averages.png
-│   └── actual_vs_predicted.png
-│   
+│   ├── actual_vs_predicted.png
+│   └── additional_visualizations.png
+│
+└── models/
+    └── random_forest_model.pkl
 
-Project Objectives
+Model Performance
+Metric	Value
+RMSE (tuned model)	21.46
+R² Score	0.94
 
-Clean and prepare five years of TSLA historical stock data.
+The model captures long-term price trends effectively but, as expected in financial time series, struggles with sudden price spikes and reversals. Regularization was prioritized over perfect fit to ensure robustness.
 
-Perform exploratory data analysis to identify major price trends, volatility, and market behavior.
+How to Run the Notebook
 
-Engineer features including daily returns and moving averages.
+Clone the repository
 
-Build and evaluate a Random Forest regression model for future price prediction.
+Install the required dependencies
 
-Interpret results and highlight model strengths and limitations within a financial context.
+Open the notebook in Jupyter or VS Code
 
-Dataset
+Run the analysis end-to-end
 
-Source: Yahoo Finance (historical daily TSLA price data)
+Data Source
 
-Period: 2018–2023
+The raw historical TSLA stock data was downloaded directly from Yahoo Finance.
 
-Columns used:
+Contact
 
-Date
-
-Open
-
-High
-
-Low
-
-Close
-
-Volume
-
-All missing values were checked and confirmed to be absent. The Date column was converted to datetime format, and additional features were created through feature engineering.
-
-Exploratory Data Analysis (EDA)
-1. TSLA Closing Price Trend
-
-A long-term upward trajectory with significant volatility, reflecting Tesla’s rapid growth phase and subsequent correction periods.
-
-(Image: closing_price_trend.png)
-
-2. TSLA Daily Returns
-
-Daily returns were calculated to capture short-term price behavior and measure volatility.
-
-(Image: daily_returns_plot.png)
-
-3. Trading Volume Over Time
-
-Reveals rising liquidity and market interest, often confirming major price movements.
-
-(Image: volume_plot.png)
-
-4. Moving Averages (50-Day and 200-Day)
-
-Technical indicators were computed to identify trend direction and momentum shifts.
-
-(Image: moving_averages_plot.png)
-
-5. Positive vs Negative Daily Returns
-
-Daily returns were visualized with color differentiation for positive and negative movements.
-
-(Image: daily_returns_positive_negative.png)
-
-Machine Learning Model
-Model Used
-
-Random Forest Regressor
-
-Feature Inputs
-
-Previous day’s Close price
-
-Moving averages
-
-Daily returns
-
-Volume
-
-Train/Test Split
-
-80% training
-
-20% testing
-
-Evaluation Metrics
-
-RMSE
-
-R² Score
-
-Model Interpretation
-
-The model effectively captures overall trends but struggles with abrupt turning points, which is expected for tree-based methods on volatile financial data. Regularization through hyperparameter tuning was applied to reduce overfitting.
-
-(Image: actual_vs_predicted.png)
-
-Key Findings
-
-TSLA exhibits strong long-term growth with high short-term volatility.
-
-Trading volume tends to validate major price movements.
-
-Moving averages provide meaningful trend indicators useful for feature engineering.
-
-The Random Forest model performs well in trend following but naturally underperforms during sudden reversals.
-
-This project demonstrates applied knowledge in financial EDA, technical indicators, and practical machine learning workflows.
-
-Tools and Libraries
-
-Python
-
-Pandas
-
-NumPy
-
-Matplotlib
-
-Scikit-learn
-
-Google Colab / Jupyter Notebook
-
-How to Run
-
-Clone the repository:
-
-git clone https://github.com/yourusername/tsla-stock-analysis-ml.git
-
-
-Install dependencies (optional if using Colab):
-
-pip install -r requirements.txt
-
-
-Open the notebook:
-
-tsla_stock_analysis.ipynb
-
-
-Run all cells in sequence.
-
-Future Improvements
-
-Incorporate LSTM or GRU deep learning models for sequence prediction.
-
-Add more technical indicators (RSI, MACD).
-
-Extend analysis to multi-stock comparison or multi-feature forecasting.
-
-Deploy predictions through a simple dashboard.
-
-Author
-
-Daya Kumar https://www.linkedin.com/in/daya-kumar27/
-Aspiring Data Scientist & Machine Learning Enthusiast
+If you’d like to connect, collaborate, or discuss data science, you can reach me here:
+LinkedIn: [https://www.linkedin.com/in/daya-kumar27/]
+Feel free to connect.
